@@ -1,7 +1,7 @@
 package mbozkurt.core.messaging.model;
 
 import lombok.Getter;
-import mbozkurt.core.messaging.component.UyapMessageSource;
+import mbozkurt.core.messaging.component.CoreMessageSource;
 
 public class MessageException extends RuntimeException{
 	
@@ -11,24 +11,24 @@ public class MessageException extends RuntimeException{
 	private final ClientMessage clientMessage;
 	
 	public <E extends Enum<E> & Message>MessageException(E message) {
-		String text = UyapMessageSource.getInstance().getMessage(message.getCode());
+		String text = CoreMessageSource.getInstance().getMessage(message.getCode());
 		clientMessage = new ClientMessage(message.getCode(), message.getType(), text);
 	}
 	
 	public <E extends Enum<E> & Message>MessageException(E message, Object[] params) {
-		String text = UyapMessageSource.getInstance().getMessage(message.getCode(), params);
+		String text = CoreMessageSource.getInstance().getMessage(message.getCode(), params);
 		clientMessage = new ClientMessage(message.getCode(), message.getType(), text);
 	}
 	
 	public <E extends Enum<E> & Message>MessageException(Exception causedBy, E message) {
 		super(causedBy);
-		String text = UyapMessageSource.getInstance().getMessage(message.getCode());
+		String text = CoreMessageSource.getInstance().getMessage(message.getCode());
 		clientMessage = new ClientMessage(message.getCode(), message.getType(), text);
 	}
 	
 	public <E extends Enum<E> & Message>MessageException(Exception causedBy, E message, Object[] params) {
 		super(causedBy);
-		String text = UyapMessageSource.getInstance().getMessage(message.getCode(), params);
+		String text = CoreMessageSource.getInstance().getMessage(message.getCode(), params);
 		clientMessage = new ClientMessage(message.getCode(), message.getType(),text);
 	}
 

@@ -17,7 +17,7 @@ import mbozkurt.core.messaging.repository.MessageRepository;
 
 @Slf4j
 @Component
-public class UyapMessageSource implements ApplicationContextAware {
+public class CoreMessageSource implements ApplicationContextAware {
     
     private static ApplicationContext context;
 
@@ -29,8 +29,8 @@ public class UyapMessageSource implements ApplicationContextAware {
         context = ctx;
     }
     
-    public static UyapMessageSource getInstance() {
-    	return context.getBean(UyapMessageSource.class);
+    public static CoreMessageSource getInstance() {
+    	return context.getBean(CoreMessageSource.class);
     }
 
     

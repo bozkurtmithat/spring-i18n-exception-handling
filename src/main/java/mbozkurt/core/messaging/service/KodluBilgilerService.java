@@ -5,14 +5,14 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import mbozkurt.core.messaging.component.UyapMessageSource;
+import mbozkurt.core.messaging.component.CoreMessageSource;
 import mbozkurt.core.messaging.entity.MessageEntity;
 
 @Service
 public class KodluBilgilerService {
 
 	@Autowired
-	private UyapMessageSource messageSource;
+	private CoreMessageSource messageSource;
 
 	/**
 	 * Belirli bir locale'a ait tüm mesajları getirir.
