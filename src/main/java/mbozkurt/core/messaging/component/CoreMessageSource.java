@@ -28,26 +28,17 @@ public class CoreMessageSource implements ApplicationContextAware {
     public void setApplicationContext(ApplicationContext ctx) {
         context = ctx;
     }
-    
+	
+    /**
+    * This method is for accessing API with programatically.
+    */
     public static CoreMessageSource getInstance() {
     	return context.getBean(CoreMessageSource.class);
     }
-
     
-//
-//	public ClientMessage toClientMessage(ServerMessage serverMessage) {
-//		Object[] params = serverMessage.getParams();
-//		Locale locale = LocaleContextHolder.getLocale();
-//		String messageText = getMessage(serverMessage.getCode(), locale.toString());
-//		if (params != null) {
-//			messageText = MessageFormat.format(messageText, params);
-//		}
-//		return new ClientMessage(serverMessage.getCode(), messageText, serverMessage.getType());
-//	}
-	
-	public String getMessage(String code) {
-		return getMessage(code, LocaleContextHolder.getLocale().toString());
-	}
+    public String getMessage(String code) {
+	return getMessage(code, LocaleContextHolder.getLocale().toString());
+    }
 	
 	public String getMessage(String code, Object...objects) {
 		String template = getMessage(code, LocaleContextHolder.getLocale().toString());
