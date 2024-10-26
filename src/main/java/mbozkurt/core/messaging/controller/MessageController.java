@@ -13,13 +13,13 @@ import static mbozkurt.core.messaging.SystemErrorMessage.UNAUTHORIZED_USER;
 import mbozkurt.core.messaging.SystemErrorMessage;
 import mbozkurt.core.messaging.entity.MessageEntity;
 import mbozkurt.core.messaging.model.MessageException;
-import mbozkurt.core.messaging.service.KodluBilgilerService;
+import mbozkurt.core.messaging.service.MessageService;
 
 @RestController
-public class KodluBilgilerController {
+public class MessageController {
 
 	@Autowired
-	KodluBilgilerService kodluBilgilerService;
+	MessageService messageService;
 	
 	/**
      * Belirtilen locale için veritabanından tüm mesajları döner.
@@ -29,7 +29,7 @@ public class KodluBilgilerController {
      */
     @GetMapping("/test/messages")
     public List<MessageEntity> getMessages(@RequestParam String localeName) {
-        return kodluBilgilerService.getMessagesForLocale(localeName);
+        return messageService.getMessagesForLocale(localeName);
     }
     
     @GetMapping("/test/messages/fixed")

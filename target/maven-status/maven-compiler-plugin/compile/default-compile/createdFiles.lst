@@ -1,0 +1,17 @@
+mbozkurt/core/messaging/entity/MessageId.class
+mbozkurt/core/messaging/model/MessageType.class
+mbozkurt/core/messaging/model/ClientMessage.class
+mbozkurt/core/messaging/SystemErrorMessage.class
+mbozkurt/core/messaging/model/Message.class
+mbozkurt/core/messaging/repository/MessageRepository.class
+mbozkurt/core/messaging/model/WarningMessage.class
+mbozkurt/core/messaging/model/InfoMessage.class
+mbozkurt/core/messaging/model/MessageException.class
+mbozkurt/core/messaging/component/CoreMessageSource.class
+mbozkurt/core/messaging/controller/GlobalMessageExceptionHandler.class
+mbozkurt/core/messaging/model/ErrorMessage.class
+mbozkurt/core/messaging/SystemMessages.class
+mbozkurt/core/messaging/MySpringBootApplication.class
+mbozkurt/core/messaging/entity/MessageEntity.class
+mbozkurt/core/messaging/controller/MessageController.class
+mbozkurt/core/messaging/service/MessageService.class

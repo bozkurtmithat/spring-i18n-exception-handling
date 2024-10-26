@@ -5,13 +5,13 @@
 /home/mithat/Downloads/spring-exception-handling/src/main/java/mbozkurt/core/messaging/repository/MessageRepository.java
 /home/mithat/Downloads/spring-exception-handling/src/main/java/mbozkurt/core/messaging/model/WarningMessage.java
 /home/mithat/Downloads/spring-exception-handling/src/main/java/mbozkurt/core/messaging/component/CoreMessageSource.java
-/home/mithat/Downloads/spring-exception-handling/src/main/java/mbozkurt/core/messaging/service/KodluBilgilerService.java
 /home/mithat/Downloads/spring-exception-handling/src/main/java/mbozkurt/core/messaging/model/ClientMessage.java
 /home/mithat/Downloads/spring-exception-handling/src/main/java/mbozkurt/core/messaging/entity/MessageId.java
-/home/mithat/Downloads/spring-exception-handling/src/main/java/mbozkurt/core/messaging/controller/KodluBilgilerController.java
+/home/mithat/Downloads/spring-exception-handling/src/main/java/mbozkurt/core/messaging/controller/MessageController.java
 /home/mithat/Downloads/spring-exception-handling/src/main/java/mbozkurt/core/messaging/SystemErrorMessage.java
 /home/mithat/Downloads/spring-exception-handling/src/main/java/mbozkurt/core/messaging/model/ErrorMessage.java
 /home/mithat/Downloads/spring-exception-handling/src/main/java/mbozkurt/core/messaging/entity/MessageEntity.java
 /home/mithat/Downloads/spring-exception-handling/src/main/java/mbozkurt/core/messaging/model/MessageException.java
 /home/mithat/Downloads/spring-exception-handling/src/main/java/mbozkurt/core/messaging/controller/GlobalMessageExceptionHandler.java
 /home/mithat/Downloads/spring-exception-handling/src/main/java/mbozkurt/core/messaging/model/InfoMessage.java
+/home/mithat/Downloads/spring-exception-handling/src/main/java/mbozkurt/core/messaging/service/MessageService.java
