@@ -9,16 +9,16 @@ import mbozkurt.core.messaging.component.CoreMessageSource;
 import mbozkurt.core.messaging.entity.MessageEntity;
 
 @Service
-public class KodluBilgilerService {
+public class MessageService {
 
 	@Autowired
 	private CoreMessageSource messageSource;
 
 	/**
-	 * Belirli bir locale'a ait tüm mesajları getirir.
+	 * Gets all mesaage belongs to a specific locale 
 	 *
-	 * @param localeName Yerel dil (ör. en_US, tr_TR)
-	 * @return Yerel dile ait tüm hata mesajları
+	 * @param localeName (ör. en_US, tr_TR)
+	 * @return All messages of locale
 	 */
 	public List<MessageEntity> getMessagesForLocale(String locale) {
 		return messageSource.getMessagesByLocale(locale);
